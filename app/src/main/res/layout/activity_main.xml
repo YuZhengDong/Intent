@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="cn.edu.gdmec.a07150847.intent.MainActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显式启动Activity"
+        android:id="@+id/button3"
+        android:onClick="componentname"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="隐式启动Activity"
+        android:id="@+id/button2"
+        android:onClick="intentfilter"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/url"
+        android:layout_gravity="center_horizontal"
+        android:text="http://www.gdmec.cn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开网页"
+        android:id="@+id/button4"
+        android:layout_gravity="center_horizontal"
+        android:onClick="view"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone"
+        android:layout_gravity="center_horizontal"
+        android:text="110"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拨号"
+        android:id="@+id/button5"
+        android:layout_gravity="center_horizontal"
+        android:onClick="dial"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="转换"
+        android:id="@+id/button6"
+        android:onClick="startactivityforresult"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="等待转换"
+        android:id="@+id/textView1"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
